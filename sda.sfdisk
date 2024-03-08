@@ -1,0 +1,8 @@
+label: dos
+label-id: 0x07756e00
+device: /dev/sda
+unit: sectors
+sector-size: 512
+
+/dev/sda1 : start=        2048, size=      409600, type=c
+/dev/sda2 : start=      411648, size=   249325568, type=83

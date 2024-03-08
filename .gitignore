@@ -1,13 +1,2 @@
-*.tar
-*.tar.*
-*.jar
-*.exe
-*.msi
-*.zip
-*.tgz
-*.log
-*.log.*
-*.sig
-
-pkg/
-src/
+ArchLinuxARM-rpi-aarch64-latest.tar.gz
+ArchLinuxARM-rpi-aarch64-latest.tar.gz.md5

@@ -3,7 +3,7 @@ This is a simple script to automate the process detailed on [https://archlinuxar
 
 First, identify the device name using `lsblk` and then run the command as `sudo bash ./arch_pi3_install.bash [drive]`. An example of an installation is as follows:
 
-```bash
+```text
 ➜  armv8_arch_pi3_installer git:(main) ✗ lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sdb           8:16   1 119.1G  0 disk 
@@ -14,7 +14,7 @@ nvme0n1     259:0    0   1.8T  0 disk
 ├─ ... (Other drives)
 └─nvme0n1pN 259:7    0   XXXG  0 part 
 ➜  armv8_arch_pi3_installer git:(main) ✗ sudo bash ./arch_pi3_install.bash /dev/sdb
-[sudo] password for <username>: 
+[sudo] password for [username]: 
 Verifying MD5 hashes...
 Making partitions...
 Formatting partitions...

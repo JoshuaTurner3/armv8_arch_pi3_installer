@@ -7,8 +7,6 @@ First, identify the device name using `lsblk` and then run the command as `sudo 
 ➜  armv8_arch_pi3_installer git:(main) ✗ lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sdb           8:16   1 119.1G  0 disk 
-├─sdb1        8:17   1   200M  0 part 
-└─sdb2        8:18   1 118.9G  0 part 
 nvme0n1     259:0    0   1.8T  0 disk 
 ├─nvme0n1p1 259:1    0   100M  0 part /efi
 ├─ ... (Other drives)
@@ -24,3 +22,5 @@ Unmounting...
 Complete
 ➜  armv8_arch_pi3_installer git:(main) ✗ 
 ```
+
+In the above example, the user's main OS (Arch Linux btw) files are on `/dev/nvme0n1` and the removeable sd card for the Raspberry Pi is in `/dev/sdb`. DO NOT RUN THIS INSTALLER ON THE WRONG DEVICE OR YOU WILL LOSE ALL YOUR FILES.

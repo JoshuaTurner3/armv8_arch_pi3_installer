@@ -1,11 +1,5 @@
 #! /bin/bash
 
-# Check root
-if [[ `whoami` != 'root' ]]; then
-    echo "Script must be run as root, try again"
-    exit
-fi
-
 # Download URLs
 FILE_URL='http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz'
 MD5_URL='http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz.md5'
